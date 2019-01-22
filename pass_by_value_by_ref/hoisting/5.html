@@ -1,0 +1,25 @@
+<html>
+
+<script>
+
+(function() {
+	console.log(typeof displayFunc);
+	var displayFunc = function(){
+		console.log("Hi I am inside displayFunc");
+	}
+}());
+
+</script>
+
+<script>
+/*(function(){
+   var displayFunc = undefined;
+   console.log(typeof displayFunc);//undefined
+   displayFunc = function(){
+		console.log("Hi I am inside displayFunc");
+	}
+})
+*/
+</script>
+
+</html>

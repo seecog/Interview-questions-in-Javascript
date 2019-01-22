@@ -1,0 +1,61 @@
+<html>
+
+<script>/*
+var x1 = {
+    first_name : "Sachin",
+    last_name : "Kumar"
+};
+var x2 = new Object();
+x2.first_name = "sachin";
+x2.last_name = "Kumar";
+
+var Emplyee = function(){
+    this.first_name = "Saket";
+    this.last_name = "Kumar";
+}
+var ob1 = new Employee();
+var ob2 = new Employee();
+
+var ob1 = Object.create({first_name : "Sanjay"});
+{
+    last_name : "kumar",
+    _proto_ : {
+        foo : "Sanjay"
+    }
+}
+delete operator can only delete the direct property of the Object
+It can not deete the _proto_ property of Object*/
+
+
+
+(function() {
+	var objA = Object.create({
+		foo: 'foo'
+	});
+{
+    _proto_ : {
+        foo: 'foo'
+    }
+}
+
+	var objB = objA;
+    objB = {
+    _proto_ : {
+        foo: 'foo'
+    }
+}
+	objB.foo = 'bar';//can not assign value directly to prototype property of object
+objB = {
+    foo : 'bar',
+    _proto_ : {
+        foo: 'foo'
+    }
+}
+	//delete objA.foo;
+	console.log(objA.foo);
+	console.log(objB.foo);
+}());
+
+</script>
+
+</html>

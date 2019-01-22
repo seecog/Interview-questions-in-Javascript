@@ -1,0 +1,31 @@
+<html>
+
+<script>
+//Named function should move to the top
+var employeeId = 'abc123';
+function foo(){
+var	employeeId = '123bcd';
+	return;
+}
+foo();
+console.log(employeeId);
+
+</script>
+
+<script>
+/*
+var employeeId = undefined;
+function foo(){
+var	employeeId = undefined;
+employeeId = '123bcd';
+	return;
+}
+
+employeeId = 'abc123';
+foo();
+console.log(employeeId);
+*/
+
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+
+<html>
+<script>
+//What is the drawback of declaring methods directly in JavaScript objects?
+var obj = {
+name : "Mohan",
+getDetails : function(){
+
+}
+}//Object literal
+//method , when defined inside the object
+
+var Employee = function(){
+this.name = "Mohan";
+
+}
+Employee.prototype.getDetails = function(){
+    return "Hello "+this.name;
+}
+
+
+var ob1 = new Employee();
+var ob2 = new Employee();
+//Both these 2 object has a seprate copy of getDetails method gets created
+
+</script>
+_prototype_
+
+</html>

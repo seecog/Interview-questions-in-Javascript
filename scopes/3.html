@@ -1,0 +1,26 @@
+<html>
+
+<script>
+
+var employeeId = 'aq123';
+
+function Employee() {
+	this.employeeId = 'bq1uy';
+}
+console.log(new Employee().employeeId);//bq1uy
+Employee.prototype.employeeId = 'kj182';
+Employee.prototype.JobId = '1BJKSJ';
+console.log(new Employee().JobId);//1BJKSJ
+console.log(new Employee().employeeId);//bq1uy
+/*
+{
+   employeeId :'bq1uy',
+    _proto_ : {
+        employeeId : 'kj182',
+        JobId : '1BJKSJ'
+    } 
+}
+*/
+</script>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<script>
+
+(function() {
+	var greet = 'Hello World';
+	var toGreet = [].filter.call(greet, function(element, index) {
+		return index > 5;
+	});
+	console.log(toGreet);
+}());
+
+/*
+var arr = [1,10,88,7,45];
+var newarr = arr.filter(function(x){
+    return x<9;
+})
+console.log("** ",newarr)
+*/
+</script>
+</html>

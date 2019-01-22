@@ -1,0 +1,28 @@
+
+<html>
+<script>
+//How to check if an object is an array or not?
+var a = [1,4,5,676];
+var b = null;
+console.log(typeof a,typeof b);
+console.log(a instanceof Array);
+var Employee = function(){
+    this.name = "Mohan";
+    this.age = 21;
+}
+var ob1 = new Employee();
+console.log("The employee object ",(ob1 instanceof Object));
+//step2
+console.log("--> ",Object.prototype.toString.call(a));
+if(Object.prototype.toString.call(b) == '[object Array]'){
+    console.log('a is array')
+}
+else{
+   console.log('a is not array') 
+}
+//Array.isArray()
+console.log('Is an array @@@ ',Array.isArray(b))
+</script>
+</html>
+
+

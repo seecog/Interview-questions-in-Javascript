@@ -1,0 +1,17 @@
+<html>
+
+<script>
+var ob1 = {
+    a : 10,
+    b : 20
+}
+//In javascript we have no associative array. But object treacted as assotiative array for-in
+var count = 0;
+for(x in ob1){
+    count++;
+}
+console.log('The length is ',count)
+var arr1 = Object.keys(ob1);
+console.log(arr1.length);
+</script>
+</html>

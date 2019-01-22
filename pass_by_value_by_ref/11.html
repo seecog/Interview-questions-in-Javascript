@@ -1,0 +1,24 @@
+<html>
+
+<script>
+
+(function() {
+	var objA = {
+		foo: 'foo'
+	};
+	var objB = objA;//object & array always passes the ref
+	objB.foo = 'bar';
+
+	delete objA.foo;
+	console.log(objA.foo);
+	console.log(objB.foo);
+}());
+/*
+{
+
+    
+}
+*/
+</script>
+
+</html>

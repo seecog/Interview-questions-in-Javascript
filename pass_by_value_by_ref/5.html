@@ -1,0 +1,11 @@
+<html>
+<script>
+//object and array are always pass by references
+//string,boolean,number are always pass by value
+var arrA = [0,1,2,3,4,5];//500
+var arrB = arrA;//500
+arrB[0]=42;
+console.log(arrA);//42,1,2,3,4,5
+
+</script>
+</html>

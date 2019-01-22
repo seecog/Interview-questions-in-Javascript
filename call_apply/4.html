@@ -1,0 +1,29 @@
+<html>
+
+<script>
+
+(function() {
+	var fooAccount = {
+		name: 'John',
+		amount: 6000,
+		deductAmount: function(amount) {
+			this.amount -= amount;
+			return this.amount;
+		}
+	};
+	var barAccount = {
+		name: 'John',
+		amount: 4000
+	};
+	var withdrawAmountBy = function(totalAmount) {
+		return fooAccount.deductAmount.apply(barAccount,[totalAmount]);
+	};
+   //console.log(" 1 -> ",fooAccount.deductAmount(400))
+    console.log(withdrawAmountBy(400));//3600
+	console.log(withdrawAmountBy(300));//3300
+	console.log(withdrawAmountBy(200)); //3100
+}());
+
+</script>
+
+</html>

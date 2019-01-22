@@ -1,0 +1,17 @@
+<html>
+
+<script>
+
+var employeeId = 'aq123';
+(function Employee() {
+	try {
+		throw 'foo123';
+	} catch (employeeId) {//local scope
+		console.log(employeeId);//foo123
+	}
+	console.log(employeeId);//aq123
+}());
+
+
+</script>
+</html>

@@ -1,0 +1,13 @@
+<html>
+
+<script>
+//object and array are always pass by references
+//string,boolean,number are always pass by value
+var objA = {prop1: 42};//objA is object literal
+var objB = objA; 
+objB.prop1 = 90;
+//500.prop1 = 90;
+console.log(objA);//{prop1 : 90}
+
+</script>
+</html>

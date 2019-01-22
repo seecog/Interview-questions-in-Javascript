@@ -1,0 +1,17 @@
+<html>
+
+<script>
+function passWordMngr() {
+	var password = '12345678';
+	this.userName = 'John';
+	return {
+		pwd: password
+	};
+}
+// Block End
+var userInfo = passWordMngr();
+console.log(userInfo.pwd);//12345678
+console.log(userInfo.userName);//undefined
+//new passWordMngr().username
+</script>
+</html>

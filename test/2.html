@@ -1,0 +1,16 @@
+<html>
+
+<script>
+var Person = function(name,age){
+this.name = name;
+this.age = age;
+}
+Person.sal = 120;
+Person.detail = function(){
+    console.log('The new detail is ',this.sal);
+}
+console.log(new Person("Mohan",21).name);
+console.log("->",Person.detail());
+</script>
+
+</html>

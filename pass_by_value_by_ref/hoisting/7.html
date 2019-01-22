@@ -1,0 +1,33 @@
+<html>
+
+<script>
+var employeeId = 'abc123';
+
+function foo() {
+
+	employeeId = '123bcd';
+	return;
+
+	function employeeId() {}//named function
+}
+foo();
+console.log(employeeId);
+
+</script>
+
+<script>
+/*
+var employeeId = undefined;
+employeeId = 'abc123';
+function foo() {
+    function employeeId() {}
+	employeeId = '123bcd';
+	return;
+
+}
+employeeId = 'abc123';
+foo();
+console.log(employeeId);*/
+</script>
+
+</html>

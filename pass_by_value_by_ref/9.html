@@ -1,0 +1,48 @@
+<html>
+<script>
+(function() {
+	var objA = Object.create({
+		foo: 'foo'
+	});
+    //objA will contain 500
+	var objB = objA;//Array and object always passes the reference
+    //objB 500
+	objB.foo = 'bar';
+	console.log(objA.foo);
+	console.log(objB.foo);
+}());
+/*
+Var x1 = {
+    first_name : "Mohan"
+};
+var x2 = {
+first_name : 'A',
+last_name : 'B'
+
+}
+
+var x2 = new Object();
+x2.first_name = "Sohan";
+
+var Employee = function(fnm){
+this.first_name = fnm;
+}
+var a1 = new Employee("Mohan");
+var a2 = new Employee("Sohan");
+
+var x3 = Object.create({
+    first_name : "Mohan"
+})
+
+500
+{
+foo : 'bar',
+_proto_ : {
+    foo: 'foo'
+}    
+}
+*/
+</script>
+
+
+</html>

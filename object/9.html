@@ -1,0 +1,20 @@
+<html>
+
+<script>
+(function() {
+	var objA = Object.create({
+		foo: 'foo'
+	});
+    /*{
+        _proto_ : {
+            foo: 'foo'
+        }
+    }*/
+	var objB = objA;
+	objB.foo = 'bar';
+	console.log(objA.foo);
+	console.log(objB.foo);
+}());
+
+</script>
+</html>

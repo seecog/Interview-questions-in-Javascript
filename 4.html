@@ -1,0 +1,25 @@
+
+
+<html>
+<script>
+//Closure : It is a inner function that can access global variable , parent function varibale , parent function arguments , iner function varibale , inner function arguments
+let a = 100;
+function parentFunction(parentArg){
+
+let parentVar = 1000;
+(function(innerArg){//IIFE : Immediately invoked function expression 
+let innerVar = 2000;
+console.log("Global variable ",a);
+console.log("Parent arg ",parentArg);
+console.log("Parent variable ",parentVar);
+console.log("Inner arg ",innerArg);
+console.log("Inner varibale ",innerVar);
+})(20);
+
+}
+
+parentFunction(10);
+//callback function
+
+</script>
+</html>

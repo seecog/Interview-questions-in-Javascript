@@ -1,0 +1,32 @@
+<html>
+<script>
+
+var employeeId = '1234abe';
+(function() {
+	console.log(employeeId);
+	var employeeId = '122345';
+	(function() {
+		var employeeId = 'abc1234';
+	}());
+}());
+
+</script>
+
+<script>
+/*
+var employeeId = undefined;
+employeeId = '1234abe';
+(function() {
+
+    var employeeId = undefined;
+	console.log(employeeId);
+	employeeId = '122345';
+	(function() {
+var employeeId = undefined;
+	employeeId	 = 'abc1234';
+	}());
+}());
+*/
+</script>
+
+</html>

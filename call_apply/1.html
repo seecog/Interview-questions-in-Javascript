@@ -1,0 +1,28 @@
+<html>
+
+<script>
+
+(function() {
+	var fooAccount = {//object literal
+		name: 'John',
+		amount: 4000,
+		deductAmount: function(amount) {
+			this.amount -= amount;
+			return this.amount;
+		}
+	};
+	var barAccount = {
+		name: 'John',
+		amount: 6000
+	};
+    //call and apply is used to invoke a method in object context.When calculated number of argumnets then use call. When uncalculated number of arguments then we will use call apply method
+	var withdrawAmountBy = function(totalAmount) {
+		return fooAccount.deductAmount.apply(barAccount, [totalAmount]);
+	};
+	console.log(withdrawAmountBy(400));//5600
+	console.log(withdrawAmountBy(300));//5300
+	console.log(withdrawAmountBy(200));5100
+}());
+
+</script>
+</html>

@@ -1,0 +1,10 @@
+<html>
+<script>
+var objA = {prop1: 42};//500
+var objB = objA;//500
+objB = {};//2000
+objB.prop1 = 123;
+console.log(objA);
+
+</script>
+</html>

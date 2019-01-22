@@ -1,0 +1,55 @@
+
+
+
+<html>
+<script>
+//Closure : It is a inner function that can access global variable , parent function varibale , parent function arguments , iner function varibale , inner function arguments
+
+var ob1 = {
+    a : 10,
+    b : 20
+}
+//delete operator : Used to delete the object property
+delete ob1.a;
+ob1.c = 30;
+ob1['d'] = 40;
+console.log(ob1.a,ob1.b,ob1.c,ob1.d);
+//delete works for the object
+
+//IIFE
+(function(){
+console.log("Hi")
+})();
+
+(function(x){
+console.log("Hi "+x);
+})(100);
+
+
+
+
+var output = (function(x) {//x is local variable
+  delete x;
+  return x;
+})(0);
+
+console.log('--> ',output);
+
+var x = 1;
+var output = (function() {//global variable
+  delete x;
+  return x;
+})();
+console.log('$$ ',output);
+
+var x = { foo : 1};//object literal/json object
+var output = (function() {
+  delete x.foo;
+
+  return x.foo;
+})();
+console.log("!!!!! ",output);
+
+
+</script>
+</html>

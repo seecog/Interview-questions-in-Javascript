@@ -1,0 +1,28 @@
+<html>
+<script>
+
+(function() {
+	var objA = Object.create({
+		foo: 'foo'
+	});
+	var objB = objA;
+	objB.foo = 'bar';
+
+	delete objA.foo;//delete only deletes the own property of object. It can not delete the prototype property of object
+	console.log(objA.foo);
+	console.log(objB.foo);
+}());
+
+
+/*
+{//500
+
+   _proto_ : {
+      foo: 'foo' 
+   } 
+}
+
+*/
+</script>
+
+</html>

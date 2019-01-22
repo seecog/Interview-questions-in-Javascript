@@ -1,0 +1,29 @@
+<html>
+
+<script>
+/*
+function test(a){
+
+return function(b){
+  return function(c){
+return a*b*c;
+  }
+}
+
+}
+console.log('The answer is ',test(2)(3)(4));
+*/
+
+function mul(x){//named function
+	return function(y){//anonomous function
+		return [x*y, function(z){
+			return x*y + z;
+		}];
+	}
+}
+
+console.log(mul(2)(3)[0]);//6
+console.log(mul(2)(3)[1](4));//10
+
+</script>
+</html>

@@ -1,0 +1,17 @@
+<html>
+
+<script>
+(function() {
+	var objA = {
+		foo: 'foo'
+	};//500
+	var objB = objA;
+	objB.foo = 'bar';
+
+	delete objA.foo;//used to delete the property of object
+	console.log(objA.foo);//undefined
+	console.log(objB.foo);//undefined
+}());
+
+</script>
+</html>

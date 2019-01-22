@@ -1,0 +1,33 @@
+<html>
+<script>
+(function foo() {
+	bar();
+
+	function bar() {
+		abc();
+		console.log(typeof abc);
+	}
+
+	function abc() {
+		console.log(typeof bar);
+	}
+}());
+</script>
+<script>
+/*(function foo() {
+    function abc() {
+		console.log(typeof bar);
+	}
+    function bar() {
+		abc();
+		console.log(typeof abc);
+	}
+	bar();
+
+	
+
+	
+}());
+*/
+</script>
+</html>

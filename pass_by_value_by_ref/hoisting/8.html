@@ -1,0 +1,36 @@
+<html>
+
+<script>
+
+var employeeId = 'abc123';
+
+function foo() {
+
+	employeeId();
+	return;
+
+	function employeeId() {
+		console.log(typeof employeeId);
+	}
+}
+foo();
+
+</script>
+
+<script>
+/*var employeeId = undefined;
+function foo() {
+    function employeeId() {
+		console.log(typeof employeeId);//function
+	}
+	employeeId();
+	return;
+
+	
+}
+employeeId = 'abc123';
+foo();
+*/
+</script>
+
+</html>
